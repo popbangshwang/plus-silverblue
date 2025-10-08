@@ -39,7 +39,7 @@ modules:
         - micro
         - starship
         - fish
-        - jetbrains-mono-nf-fonts
+        - jetbrains-mono-fonts-all
         - steam
     remove:
       packages:
