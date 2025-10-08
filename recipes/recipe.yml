@@ -17,15 +17,16 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # Add NVIDIA support (auto-detected at boot, safe on AMD)
-  - type: akmods
-    install:
-      - akmod-nvidia
-
   - type: dnf
     repos:
-      rpmfusion-free: true
-      rpmfusion-nonfree: true
+      files:
+        - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-%OS_VERSION%.noarch.rpm
+        - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-%OS_VERSION%.noarch.rpm
+
+  # Add NVIDIA support (auto-detected at boot, safe on AMD)
+  - type: akmods
+    nvidia-driver: nvidia
+
 
   - type: dnf
     repos:
