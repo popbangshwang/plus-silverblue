@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: plus-silverblue
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is my personal OS image - its ublue/silverblue-main plus apps/tools I want ootb.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -25,12 +25,35 @@ modules:
       packages:
         - micro
         - starship
+	- steam
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - htop
+        - nvtop
+        - tmux
+        - traceroute
+        - xhost
+        - xorg-x11-xauth
+        - yubikey-manager
+        - pam-yubico
+        - pam-u2f
+        - pam-u2fcfg
+        - just
+        - fuse
+        - fzf
+        - google-noto-sans-balinese-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-sans-javanese-fonts
+        - google-noto-sans-sundanese-fonts
+        - grub2-tools-extra
+        # silverblue specific
+        - gvfs-nfs
+        - ibus-unikey
+        - ibus-mozc
 
   - type: default-flatpaks
     configurations:
@@ -39,7 +62,10 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
-          - org.gnome.Loupe
+          - com.discordapp.Discord
+          - org.signal.Signal
+          - org.upscayl.Upscayl
+
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
