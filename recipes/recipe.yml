@@ -17,6 +17,16 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  # Add NVIDIA support (auto-detected at boot, safe on AMD)
+  - type: drivers
+    install:
+      nvidia: true
+
+  # Wayland-specific NVIDIA firmware (needed for mutter/gnome-shell compatibility)
+  - type: extensions
+    install:
+      - ublue-os/nvidia-firmware
+
   - type: dnf
     repos:
       copr:
@@ -37,6 +47,8 @@ modules:
         - gnome-terminal
         - micro
         - starship
+        - fish
+        - jetbrains-mono-nf-fonts
         - steam
     remove:
       packages:
