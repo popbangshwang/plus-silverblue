@@ -23,6 +23,24 @@ modules:
         - atim/starship
     install:
       packages:
+        # GNOME core components
+        - gnome-shell
+        - gdm
+        - gnome-session
+        - gnome-control-center
+        - polkit
+        - networkmanager
+       # - xorg-x11-server-Xwayland
+       # - xorg-x11-server-utils
+       # - xorg-x11-utils
+        - xdg-user-dirs
+        - gsettings-desktop-schemas
+        - mutter
+        - adwaita-icon-theme
+        - nautilus
+        - gnome-terminal # optional, remove if you want terminal via Flatpak only
+
+	# extra
         - micro
         - starship
         - steam
