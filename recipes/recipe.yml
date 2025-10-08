@@ -72,8 +72,7 @@ modules:
 
   # Add NVIDIA support (auto-detected at boot, safe on AMD)
   - type: akmods
-    install:
-      - nvidia
+    install: []
     nvidia-driver: nvidia
 
   - type: default-flatpaks
