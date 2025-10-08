@@ -18,14 +18,14 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   # Add NVIDIA support (auto-detected at boot, safe on AMD)
-  - type: drivers
+  - type: akmods
     install:
-      nvidia: true
+      - akmod-nvidia
 
-  # Wayland-specific NVIDIA firmware (needed for mutter/gnome-shell compatibility)
-  - type: extensions
-    install:
-      - ublue-os/nvidia-firmware
+  - type: dnf
+    repos:
+      rpmfusion-free: true
+      rpmfusion-nonfree: true
 
   - type: dnf
     repos:
