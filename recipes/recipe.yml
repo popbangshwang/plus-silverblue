@@ -28,7 +28,7 @@ modules:
         - gnome-session
         - gnome-control-center
         - polkit
-        - networkmanager
+        - NetworkManager
         - xdg-user-dirs
         - gsettings-desktop-schemas
         - mutter
