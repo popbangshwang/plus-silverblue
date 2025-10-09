@@ -1,0 +1,11 @@
+[Unit]
+Description=Toggle NVIDIA Settings visibility based on GPU presence
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/toggle-nvidia-settings.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

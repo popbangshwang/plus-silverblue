@@ -22,7 +22,6 @@ modules:
       nonfree: negativo17
       copr:
         - atim/starship
-        - che/nerd-fonts
     install:
       packages:
         #- gnome-shell
@@ -41,7 +40,6 @@ modules:
         - starship
         - fish
         - jetbrains-mono-fonts-all
-        - nerd-fonts
         - steam
     remove:
       packages:
@@ -66,7 +64,7 @@ modules:
         - google-noto-sans-cjk-fonts
         - google-noto-sans-javanese-fonts
         - google-noto-sans-sundanese-fonts
-        - grub2-tools-extra
+        - gnome-tour
         # silverblue specific
         - gvfs-nfs
         - ibus-unikey
@@ -87,6 +85,7 @@ modules:
           - com.discordapp.Discord
           - org.signal.Signal
           - org.upscayl.Upscayl
+          - com.vysp3r.ProtonPlus
 
       - scope: user # Also add Flathub user repo, but no user packages
 
