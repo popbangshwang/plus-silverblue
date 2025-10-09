@@ -24,18 +24,18 @@ modules:
         - atim/starship
     install:
       packages:
-        - gnome-shell
-        - gdm
-        - gnome-session
-        - gnome-control-center
-        - polkit
-        - NetworkManager
-        - xdg-user-dirs
-        - gsettings-desktop-schemas
-        - mutter
-        - adwaita-icon-theme
-        - nautilus
-        - gnome-terminal
+        #- gnome-shell
+        #- gdm
+        #- gnome-session
+        #- gnome-control-center
+        #- polkit
+        #- NetworkManager
+        #- xdg-user-dirs
+        #- gsettings-desktop-schemas
+        #- mutter
+        #- adwaita-icon-theme
+        #- nautilus
+        #- gnome-terminal
         - micro
         - starship
         - fish
