@@ -22,6 +22,7 @@ modules:
       nonfree: negativo17
       copr:
         - atim/starship
+        - che/nerd-fonts
     install:
       packages:
         #- gnome-shell
@@ -40,6 +41,7 @@ modules:
         - starship
         - fish
         - jetbrains-mono-fonts-all
+        - nerd-fonts
         - steam
     remove:
       packages:
