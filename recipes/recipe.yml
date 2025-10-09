@@ -17,6 +17,11 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: files
+    files:
+      - source: system_exclude/nvidia-settings.desktop
+        destination: /usr/local/share/applications/nvidia-settings.desktop
+
   - type: dnf
     repos:
       nonfree: negativo17
