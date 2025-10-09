@@ -36,6 +36,7 @@ modules:
         #- adwaita-icon-theme
         #- nautilus
         #- gnome-terminal
+        - lsd
         - micro
         - starship
         - fish

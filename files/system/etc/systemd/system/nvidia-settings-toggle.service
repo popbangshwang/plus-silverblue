@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/toggle-nvidia-settings.sh
+ExecStart=/usr/bin/toggle-nvidia-settings.sh
 RemainAfterExit=true
 
 [Install]
