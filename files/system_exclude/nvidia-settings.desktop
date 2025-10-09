@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=NVIDIA Settings
-Comment=Configure NVIDIA X Server Settings
-Exec=nvidia-settings
-Icon=nvidia-settings
-Terminal=false
-Type=Application
-Categories=Settings;HardwareSettings;
-NoDisplay=true
