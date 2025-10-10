@@ -22,8 +22,8 @@ modules:
       nonfree: negativo17
       copr:
         - atim/starship
+    install-weak-deps: false # disables automatic installation of weak dependencies like gnome-tour
     install:
-    install-weak-deps: false  # disables automatic installation of weak dependencies like gnome-tour
       packages:
         #- gnome-shell
         #- gdm
