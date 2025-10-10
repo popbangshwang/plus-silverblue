@@ -1,8 +1,12 @@
 # plus-silverblue &nbsp; [![bluebuild build badge](https://github.com/popbangshwang/plus-silverblue/actions/workflows/build.yml/badge.svg)](https://github.com/popbangshwang/plus-silverblue/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository.
 
-After setup, it is recommended you update this README to describe your custom image.
+This image aims to tweak the base ublue/silverblue-main
+It installs the nVidia driver should you need it, and hides the nVidia settings app on systems without an nVidia GPU, the driver is installed via bluebuilds akmod module
+
+Have a look at recipe.yml for more information on the small subset of packages/flatpaks that I add/remove.
+
 
 ## Installation
 
