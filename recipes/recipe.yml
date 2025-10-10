@@ -112,9 +112,9 @@ modules:
           #- org.gnome.Extensions
            - com.mattjakeman.ExtensionManager # better than org.gnome.Extensions for now
 
-  -type: gnome-extensions
-   install:
-     - Vitals # https://github.com/corecoding/Vitals
+  - type: gnome-extensions
+    install:
+      - Vitals # https://github.com/corecoding/Vitals
 
 
       - scope: user # Also add Flathub user repo, but no user packages
