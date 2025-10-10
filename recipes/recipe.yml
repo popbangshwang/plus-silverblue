@@ -110,7 +110,7 @@ modules:
           #- org.gnome.Weather
           # Non-Core
           #- org.gnome.Extensions
-           - com.mattjakeman.ExtensionManager # better than org.gnome.Extensions for now
+          - com.mattjakeman.ExtensionManager # better than org.gnome.Extensions for now
 
   - type: gnome-extensions
     install:
