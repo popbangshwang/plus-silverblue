@@ -22,8 +22,8 @@ modules:
       nonfree: negativo17
       copr:
         - atim/starship
-    install-weak-deps: false # disables automatic installation of weak dependencies like gnome-tour
     install:
+      install-weak-deps: false # disables automatic installation of weak dependencies like gnome-tour
       packages:
         #- gnome-shell
         #- gdm
@@ -112,11 +112,11 @@ modules:
           #- org.gnome.Extensions
           - com.mattjakeman.ExtensionManager # better than org.gnome.Extensions for now
 
+      - scope: user # Also add Flathub user repo, but no user packages
+
   - type: gnome-extensions
     install:
       - Vitals # https://github.com/corecoding/Vitals
 
-
-      - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
